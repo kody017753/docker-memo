@@ -5,7 +5,7 @@ docker login
 　※UsernameとPasswordを聞かれるので入力
 ```
 
-##dockerから任意のイメージをpullする（インストールするイメージ）
+## dockerから任意のイメージをpullする（インストールするイメージ）
 ```ubuntu
 docker pull <image>
 
