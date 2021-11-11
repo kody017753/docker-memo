@@ -58,9 +58,14 @@ docker exec -it <コンテナのIDか名前> bash
 
 ## コンテナを新しいイメージとして保存する
 ```ubuntu
-docker commit <コンテナのIDか名前> ubntu:updated
+docker commit <コンテナのIDか名前> ubntu:updated（IMAGE名:TAG名）
 ```
 
+## DockerhubにDocker imageをpushする
+```ubuntu
+docker push <image>
+ ※このイメージはリポジトリの名前になる
+```
 
 
 
