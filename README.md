@@ -9,6 +9,8 @@ docker login
 ```ubuntu
 docker pull <image>
 
-##ホスト(PC等)の中にあるイメージのリストを確認
+```
+## ホスト(PC等)の中にあるイメージのリストを確認
 ```ubuntu
 docker images
+```
