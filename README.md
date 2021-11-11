@@ -1,68 +1,68 @@
 
 ## dockerにログインする
-```ubuntu
+```bash
 docker login
 　※UsernameとPasswordを聞かれるので入力
 ```
 
 ## dockerから任意のイメージをpullする（インストールするイメージ）
-```ubuntu
+```bash
 docker pull <image>
 
 ```
 ## ホスト(PC等)の中にあるイメージのリストを確認
-```ubuntu
+```bash
 docker images
 ```
 ## コンテナを作成
-```ubuntu
+```bash
 docker run <image>
 ```
 
 ## コンテナを表示する(アクティブなもののみ)
-```ubuntu
+```bash
 docker ps
 ```
 
 ## コンテナを全て表示する
-```ubuntu
+```bash
 docker ps -a
 ```
 
 ## ubuntuのDocker imageをrunする（コンテナに入る）
-```ubuntu
+```bash
 docker run -it ubuntu bash
 ```
 
 ## ubntuのコンテナを更新（コンテナに入っている状態(run)で）
-```ubuntu
+```bash
 （例）
 touch <file>
 　※ファイルが作成される
 ```
 
 ## コンテナから抜ける
-```ubuntu
+```bash
 exit
 ```
 
 ## コンテナを再度起動する
-```ubuntu
+```bash
 docker restart <コンテナのIDか名前>
 ```
 
 ## コンテナに再度入る
-```ubuntu
+```bash
 docker exec -it <コンテナのIDか名前> bash
 ```
 
 ## コンテナを新しいイメージとして保存する
-```ubuntu
+```bash
 docker commit <コンテナのIDか名前> ubntu:updated（IMAGE名:TAG名）
 ```
 
 ## DockerhubにDocker imageをpushする
-```ubuntu
+```bash
 docker push <image>
  ※このイメージはリポジトリの名前になる
 ```
